@@ -41,272 +41,183 @@
  */
 }
 
+@font-face {
+    font-family: 'Open-sans-regular';
+    src: url('./opensans-regular-webfont.woff');
+}
+
+
 
 *,::before,::after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'sfprotextregular', helvetica, 'helvetica neu';
 }
 /* contenaire dans le header principal 
  */
 
-#headerone{
-    width: 100%;
+header{
+    display: flex;
+    justify-content: space-around;
+    row-gap: 2px;
+    align-items: center;
+    width: 1349px;
     height: 50px;
     background-color: #313132;
-    color: #f5f5f7;
-    font-family: 'sfprotextsemobold';
-    font-size: 10px;    
-    z-index: 10;
-    position: fixed; 
-}
-.svgheader1{
-    width: 25px;
-    height: 25px;
-    position: relative;
-    left: 10px;
-    top: 7px;
-    z-index: 3;
+    padding: 0 170px;
+    position: fixed;
+    z-index: 4;
+   
 }
 
-.svgheader2{
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 60px;
-    top: 7px;
-    z-index: 3;
+header svg:hover{
+    -webkit-text-fill-color: white;   
 }
-.itemstore{
-    z-index: 3;
-    margin-top: 7px;
+#search{
+    margin-top: 50px;
 }
-#itemheadermac{
-    z-index: 3;
-    margin-top: 7px;
-    margin-left: -10px;
-}
-#itemheader0{
-    z-index: 3;
-    margin-top: 7px;
-    margin-left: -12px;
-}
-.itemheaderiphone{
-    position: absolute;
-    right: 700px;
-    top: 7px;
-    z-index: 3;
-}
-.itemheaderwatch{
-    position: absolute;
-    right: 620px;
-    top: 7px;
-    z-index: 3;
-}
-.itemheaderairpods{
-    position: absolute;
-    right: 530px;
-    top: 7px;
-    z-index: 3;
-}
-.itemheadertv{
-    position: absolute;
-    right: 430px;
-    top: 7px;
-    z-index: 3;
-}
-.itemheaderonly{
-    position: absolute;
-    right: 300px;
-    top: 7px;
-    z-index: 3;
-}
-.itemheaderaccesories{
-    position: absolute;
-    right: 200px;
-    top: 7px;
-    z-index: 3;
-}
-.svgheadersupport{
-    position: absolute;
-    right: 120px;
-    top: 7px;
-    z-index: 3;
-}
-.svgheader3{
-    width: 25px;
-    height: 25px;
-    margin: 0 10px;
-    position: absolute;
-    right: -3px;
-    top: 7px;
-    z-index: 3;
-}
-/* contenaire dans le header 1 
- */
-#headertwo{
-    position: relative;
-    width: 1000px;
-    height: 44px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    z-index: 3;
-    
+#bag{
+    margin-top: 5px;
 }
 /* contenaire dans le header 2 unicef 
  */
-#headerunicef{
+ #headerunicef{
+    width: 100%;
+    height: 5em;
+    background-color: #f5f5f7;   
     display: flex;
     justify-content: center;
+    row-gap: 2px;
     align-items: center;
-    height: 130px;
-    margin-top: -1px; 
-    background-color: #f5f5f7;   
+    color: #06c;
+    position: absolute;
+    top: 3.3em;
+    font-family:  'Helvetica Neue', Helvetica, 
+}
+.text1{
+    position: absolute;
     z-index: 3;
+    top: 12em;
+    left: 520px;
+    
 }
 
-/* contenaire unicef
- */
-#imgunicef1{
-    margin-top: 50px;
-    z-index: 3;
+#iphonetext{
+    z-index: 1;
+    text-align: center;
 }
+
 #imgunicef2{
-    color: #0066cc;
-    font-size: 15px;
-    z-index: 3;
-    font-family: 'sfprotextsemibold';
-    position: relative;
-    left: 10px;
-    margin-top: 50px;
+    margin-left: 15px;
+}
+#imgunicef2, #iphone13, #iphonese, #imgfille, #imgfemme, #imgmontre:hover{
+    cursor: pointer;
 
 }
+#iphone13{
+    margin-top: 110px; 
+    margin-bottom: -170px;
 
-/* contenaire video
- */
+}
+#iphonese{
+    margin-bottom: -140px;
+}
+
 video{
     width: 100%;
     height: 550px;
-    z-index: 1;
-}
-#apple13{
-    width: 100%;
-    height: 700px;
-    z-index: 3;
-}
-#svgapplevideo{
-    width: 25px;
-    height: 25px;
-    z-index: 3;
-    
-}
-#tv{
-    font-size: 70px;
-    z-index: 20;
-    position: relative;
-    color: #f5f5f7;
-    position: absolute;
-    margin-top: -330px;
-    margin-left: 590px;
-    font: bolder;
-}
-#prehistoric{
-    font-family: 'sfprotextsemobold';
-    font-size: 70px;
-    color: #f5f5f7;
-    margin: auto;
-    z-index: 20;
-    position: absolute;
-    margin-left: 350px;
-    margin-top: -250px;
-    z-index: 3;
-}  
-#an{
-    color: #f5f5f7;
-    margin: auto;
-    z-index: 20;
-    position: absolute;
-    margin-left: 450px;
-    margin-top: -150px;
-    z-index: 3;
-}  
-#stream{
-    font-family: 'sfprotextsemobold';
-    text-align: center;
-    color: #f5f5f7;
-    margin: auto;
-    z-index: 20;
-    color: black;
-    background-color: #f5f5f7;
-    width: 200px;
-    height: 41px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding-top: 10px;
-    position: absolute;
-    margin-left: 560px;
-    margin-top: -105px;
-}  
-#streamnow{
-    position: absolute;
-    margin-top: -10px;
-    right: -70px;
-    z-index: 3;
-    width: 12px;
-    height: 12px;
-}
-
-#iphone13{
-    width: 1000px;
-    height: 700px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-#sectioncntemaireiphone{
-    width: 100%;
-    height: 1000px;
-    z-index: 1;
-}
-
-#iphone14{
-    width: 1000px;
-    height: 700px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-#contenairephoto{
+    margin-bottom: 10px;
+} 
+#contenaire0{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
+}
+#streamnow{
+    size: 10px;
+}
+.contenaireimg{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 1800px;
-    margin-top: 450px;
+    height: 100%;
     z-index: 3;
-    padding: 5px;
-   
 }
-.imgfond{
-    max-width: 520px;
-    height: 630px;
-    z-index: 1;
-    display: block;    
-    margin: -10px;
-    margin-bottom: 1px;
+#imgfille{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+    width: 99%;
+    height: 590px;
+    margin-left: 13px;
+    padding-right: 13px;
+    margin-bottom: 13px;
 }
+#promo4 {
+    background: url("img/promo4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#promo2{
+    background: url("img/promo2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#imgfemme{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+    width: 99%;
+    height: 590px;
+    margin-left: 13px;
+    padding-right: 13px;
+    margin-bottom: 13px;
+}
+#promo1 {
+    background: url("img/privacy1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#promo3{
+    background: url("img/promo3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#imgmontre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+    width: 99%;
+    height: 590px;
+    margin-left: 13px;
+    padding-right: 13px;
+    margin-bottom: 13px;
+}
+#promo6{ 
+    background: url("img/promo6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#promo5{
+    background: url("img/promo5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*footer*/
+
 footer{
     background-color: #f5f5f7;
     padding: 10px;
     margin: 10px;
     color: #6e6e73;
-    line-height: 25px;
     font-family: 'sfprotextregular';
     font-size: 12px;
     z-index: 3;
@@ -314,7 +225,8 @@ footer{
 #shop{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
+    line-height: 25px;
     z-index: 3;
 }
 #moniphone13{
@@ -431,7 +343,7 @@ footer{
     z-index: 3;
 }
 .find{
-    color:blue;
+    color: #06c;
 }
 #united{
     position: absolute;
@@ -441,7 +353,7 @@ footer{
 #site{
     position: absolute;
     margin-left: 740px;
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 #legal{
     position: absolute;
@@ -467,3 +379,44 @@ footer{
     position: absolute;
     margin-top: 10px;
 }
+
+
+
+#blue-texts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+
+}
+
+#blue-texts span:nth-child(2){
+    padding-right: 2em;
+}
+
+#blue-texts1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin-top: 1em;
+
+}
+
+#blue-texts2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin-top: 1em;
+
+}
+
+
+
+.wwd{
+   transform: translate(20px,450px);
+}
+
+
+
